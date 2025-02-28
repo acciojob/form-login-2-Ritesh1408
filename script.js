@@ -5,5 +5,5 @@ let email = document.getElementById('e1');
 let submit = document.getElementById('btn');
 
 submit.onclick = function () {
-	alert(`First Name: ${fname.value} Last Name: ${lname.value} Phone Number: ${phoneNum.value} Email ID: ${email.value}`);
+    alert(`First Name: ${fname.value} Last Name: ${lname.value} Phone Number: ${phoneNum.value} Email ID: ${email.value}`);
 };
