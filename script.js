@@ -1,9 +1,10 @@
-let fname = document.getElementById('f1');
-let lname = document.getElementById('l1');
-let phoneNum = document.getElementById('p1');
-let email = document.getElementById('e1');
-let submit = document.getElementById('btn');
+document.getElementById('userForm').onsubmit = function (event) {
+    event.preventDefault(); // Prevent actual form submission
 
-submit.onclick = function () {
-    alert(`First Name: ${fname.value} Last Name: ${lname.value} Phone Number: ${phoneNum.value} Email ID: ${email.value}`);
+    let fname = document.getElementById('f1').value;
+    let lname = document.getElementById('l1').value;
+    let phoneNum = document.getElementById('p1').value;
+    let email = document.getElementById('e1').value;
+
+    alert(`First Name: ${fname} Last Name: ${lname} Phone Number: ${phoneNum} Email ID: ${email}`);
 };
